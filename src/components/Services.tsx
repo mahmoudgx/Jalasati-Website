@@ -2,8 +2,8 @@ import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
-    <div id="الخدمات" className="pt-20">
-      <div className="text-center text-4xl md:text-5xl font-bold text-[#207FBF] mb-10">
+    <div id="الخدمات" className="px-5 py-10 ">
+      <div className="text-center text-3xl md:text-5xl font-bold text-[#207FBF] md:mb-0 mb-10">
         <h1>الخدمات التي نقدمها</h1>
       </div>
       <div className="flex flex-wrap justify-center gap-5 md:gap-10 md:p-20">

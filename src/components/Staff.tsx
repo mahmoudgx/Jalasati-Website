@@ -90,17 +90,11 @@ const Staff = () => {
   };
 
   return (
-    <div id="الاخصائيين" className="py-20 bg-[#E6F6F6]">
-      <div className="text-center text-5xl font-bold text-[#207FBF] mb-20">
+    <div id="الاخصائيين" className="px-5 py-10 md:p-20 bg-[#E6F6F6]">
+      <div className="text-center text-3xl md:text-5xl font-bold text-[#207FBF] mb-10">
         <h1>افضل الاخصائيين لدينا</h1>
       </div>
       <div className="relative flex justify-center items-center">
-        <button
-          onClick={handlePrevClick}
-          className="absolute left-2 md:left-5 bg-[#207FBF] text-white p-2 md:p-3 rounded-full custom-shadow z-10"
-        >
-          <FaArrowLeft />
-        </button>
         <Slider
           ref={sliderRef}
           {...settings}
@@ -120,13 +114,19 @@ const Staff = () => {
             </div>
           ))}
         </Slider>
-        <button
-          onClick={handleNextClick}
-          className="absolute right-2 md:right-5 bg-[#207FBF] text-white p-2 md:p-3 rounded-full custom-shadow z-10"
-        >
-          <FaArrowRight />
-        </button>
       </div>
+      <button
+        onClick={handleNextClick}
+        className="absolute right-2 md:right-5 bg-[#207FBF] text-white p-2 md:p-3 rounded-full custom-shadow z-10"
+      >
+        <FaArrowRight />
+      </button>
+      <button
+        onClick={handlePrevClick}
+        className="absolute left-2 md:left-5 bg-[#207FBF] text-white p-2 md:p-3 rounded-full custom-shadow z-10"
+      >
+        <FaArrowLeft />
+      </button>
     </div>
   );
 };
