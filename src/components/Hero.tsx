@@ -1,11 +1,10 @@
+import mobile from "../assets/mobile.png";
+
 const Hero = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 p-5 md:p-20 items-center gap-5">
       <div className="md:order-2">
-        <img
-          src="https://cdn.dribbble.com/userupload/10208083/file/original-48731391b548bd70e93a5a44eada2c3a.png?resize=752x"
-          alt="App Screenshot"
-        />
+        <img src={mobile} alt="App Screenshot" />
       </div>
       <div className="space-y-5 md:order-1">
         <h1 className="text-[#207FBF] md:text-3xl text-lg font-medium">
