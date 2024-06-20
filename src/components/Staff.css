@@ -1,0 +1,23 @@
+/* Add this CSS file to remove the box shadow and customize the slider */
+.custom-shadow {
+    box-shadow: none !important;
+  }
+  
+  .custom-slider .slick-slide {
+    box-shadow: none !important;
+  }
+  
+  /* Additional styles for mobile responsiveness */
+  @media (max-width: 768px) {
+    .text-5xl {
+      font-size: 2.5rem; /* Adjust the font size for smaller screens */
+    }
+    .py-20 {
+      padding-top: 5rem; /* Adjust padding for smaller screens */
+      padding-bottom: 5rem;
+    }
+    .mb-20 {
+      margin-bottom: 5rem; /* Adjust margin for smaller screens */
+    }
+  }
+  

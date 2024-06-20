@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+  
+}
+@tailwind utilities;
