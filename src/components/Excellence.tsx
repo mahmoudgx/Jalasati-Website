@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 import doctor from "../assets/doctor.png";

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 import CustomersReviewsCard from "./CustomersReviewsCard";
