@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between p-5 md:p-10 border-b-2 border-[#207FBF] items-center">
       <div className="flex justify-between w-full md:w-auto">
-        <h1 className="text-xl text-[#207FBF]">جلستي</h1>
+        <h1 className="text-3xl text-[#207FBF] font-bold">جلستي</h1>
         <button
           className="md:hidden text-3xl text-[#207FBF]"
           onClick={() => setIsOpen(!isOpen)}
@@ -15,7 +15,9 @@ const NavBar = () => {
         </button>
       </div>
       <div
-        className={`w-full md:flex md:w-auto ${isOpen ? "block" : "hidden"}`}
+        className={`w-full md:flex md:w-auto transition-all duration-500 ease-in-out ${
+          isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        } overflow-hidden md:opacity-100 md:max-h-screen`}
       >
         <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-reverse text-[#727A83] text-xl items-center md:space-x-10">
           <a href="#">

@@ -1,14 +1,16 @@
+import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
 interface Props {
   imageSrc: string;
   title: string;
   description: string;
+  className?: string;
 }
 
-const ServiceCard = ({ imageSrc, title, description }: Props) => {
+const ServiceCard = ({ imageSrc, title, description, className }: Props) => {
   return (
-    <div className="flex justify-center w-full md:w-auto">
+    <div className={`flex justify-center w-full md:w-auto ${className}`}>
       <div className="bg-[#D5F0EF] w-full max-w-xs md:max-w-md h-auto rounded-lg shadow-xl py-10 text-center space-y-10">
         <img
           className="flex justify-center mx-auto"
