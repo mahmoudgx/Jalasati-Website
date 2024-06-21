@@ -2,6 +2,12 @@ import { useState } from "react";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState("الرئسية"); // Set default active item to "الرئسية"
+
+  const handleItemClick = (item: string) => {
+    // Define item as string type
+    setActiveItem(item);
+  };
 
   return (
     <div className="flex flex-col md:flex-row justify-between p-5 md:p-10 border-b-2 border-[#207FBF] items-center">
@@ -20,23 +26,47 @@ const NavBar = () => {
         } overflow-hidden md:opacity-100 md:max-h-screen`}
       >
         <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-reverse text-[#727A83] text-xl items-center md:space-x-10">
-          <a href="#">
-            <li className="hover:bg-[#207FBF] hover:text-white active:bg-[#207FBF] active:text-white p-3 hover:rounded-xl">
+          <a href="#" onClick={() => handleItemClick("الرئسية")}>
+            <li
+              className={`p-3 hover:bg-[#207FBF] hover:text-white active:bg-[#207FBF] active:text-white hover:rounded-xl ${
+                activeItem === "الرئسية"
+                  ? "bg-[#207FBF] text-white rounded-xl"
+                  : ""
+              }`}
+            >
               الرئسية
             </li>
           </a>
-          <a href="#الخدمات">
-            <li className="hover:bg-[#207FBF] hover:text-white active:bg-[#207FBF] active:text-white p-3 hover:rounded-xl">
+          <a href="#الخدمات" onClick={() => handleItemClick("الخدمات")}>
+            <li
+              className={`p-3 hover:bg-[#207FBF] hover:text-white active:bg-[#207FBF] active:text-white hover:rounded-xl ${
+                activeItem === "الخدمات"
+                  ? "bg-[#207FBF] text-white rounded-xl"
+                  : ""
+              }`}
+            >
               الخدمات
             </li>
           </a>
-          <a href="#الاخصائيين">
-            <li className="hover:bg-[#207FBF] hover:text-white active:bg-[#207FBF] active:text-white p-3 hover:rounded-xl">
+          <a href="#الاخصائيين" onClick={() => handleItemClick("الاخصائيين")}>
+            <li
+              className={`p-3 hover:bg-[#207FBF] hover:text-white active:bg-[#207FBF] active:text-white hover:rounded-xl ${
+                activeItem === "الاخصائيين"
+                  ? "bg-[#207FBF] text-white rounded-xl"
+                  : ""
+              }`}
+            >
               الاخصائيين
             </li>
           </a>
-          <a href="#تواصل_معنا">
-            <li className="hover:bg-[#207FBF] hover:text-white active:bg-[#207FBF] active:text-white p-3 hover:rounded-xl">
+          <a href="#تواصل_معنا" onClick={() => handleItemClick("تواصل معنا")}>
+            <li
+              className={`p-3 hover:bg-[#207FBF] hover:text-white active:bg-[#207FBF] active:text-white hover:rounded-xl ${
+                activeItem === "تواصل معنا"
+                  ? "bg-[#207FBF] text-white rounded-xl"
+                  : ""
+              }`}
+            >
               تواصل معنا
             </li>
           </a>

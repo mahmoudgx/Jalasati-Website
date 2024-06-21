@@ -50,7 +50,7 @@ const Services = () => {
           className="service-card"
           imageSrc="https://www.svgrepo.com/show/284185/doctor.svg"
           title="جلسات منزلية"
-          description="يمكنكم الدخول من خلال التطبيق وعرض الاخصائيين<br/> المتاحين ثم اختيار جلسة منزلية وحجز جلسة لطفلك"
+          description="يمكنكم الدخول من خلال التطبيق وعرض الاخصائيين المتاحين ثم اختيار جلسة منزلية وحجز جلسة لطفلك"
         />
       </div>
     </div>
